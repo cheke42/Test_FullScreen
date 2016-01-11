@@ -24,6 +24,7 @@ public class Test extends Application {
 	@Override
 	public void start(Stage primaryStage) {
 		System.out.println("Procedimiento Start");
+		comandos();
 		this.primaryStage = primaryStage;
 		this.primaryStage.setFullScreen(true);
 		Button btn = new Button("Login");
@@ -73,6 +74,7 @@ public class Test extends Application {
 		launch(args);
 	}
 
+	@SuppressWarnings("unused")
 	private String leerArchivo() {
 		String contenido = "";
 		List<String> list = new ArrayList<String>();
@@ -118,8 +120,8 @@ public class Test extends Application {
 			// WINDOWS: Process p = Runtime.getRuntime().exec(new String[] {
 			// "notepad.exe" });
 
-			Process p = Runtime.getRuntime().exec(new String[] { "notepad","regedit" });
-
+			Process p = Runtime.getRuntime().exec(new String[] { "cd /home/pi/contenido/" });
+			Process pp = Runtime.getRuntime().exec(new String[] { "./videoplayer.sh" });
 
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
