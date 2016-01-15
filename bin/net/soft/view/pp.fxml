@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1280.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="net.soft.controller.ControladorPP">
+   <children>
+      <ImageView fx:id="imageFondo" fitHeight="1280.0" fitWidth="720.0" pickOnBounds="true" preserveRatio="true" />
+      <VBox layoutX="53.0" layoutY="95.0" prefHeight="500.0" prefWidth="600.0">
+         <children>
+            <Button fx:id="buttonSlider" mnemonicParsing="false" onAction="#slider" prefHeight="130.0" prefWidth="600.0" text="Imagenes">
+               <padding>
+                  <Insets bottom="5.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="37.0" />
+               </font>
+            </Button>
+            <Button fx:id="buttonVideosConsola" mnemonicParsing="false" onAction="#videosConsola" prefHeight="130.0" prefWidth="600.0" text="Videos">
+               <padding>
+                  <Insets bottom="5.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="37.0" />
+               </font>
+            </Button>
+            <Button fx:id="buttonSalir" mnemonicParsing="false" onAction="#salir" prefHeight="130.0" prefWidth="600.0" text="Salir">
+               <padding>
+                  <Insets bottom="5.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="37.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
